@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<title>myapp</title>
+<link rel="stylesheet" href="[% request.uri_base %]/css/style.css" />
+</head>
+<body>
+[% content %]
+<div id="footer">
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+        try {
+            console.log(jQuery && jQuery.fn.jquery);
+        } catch (e) {
+            console.error("jQuery not found");
+        }
+    });
+</script>
+</body>
+</html>
