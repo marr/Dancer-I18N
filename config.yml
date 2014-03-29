@@ -13,14 +13,10 @@ layout: "main"
 # all the magic of encoding and decoding. You should not care
 # about unicode within your app when this setting is set (recommended).
 charset: "UTF-8"
-
-plugins:
-    "I18N::TextDomain":
-        domain: messages
-
-#session: "YAML"
+    
 session: "PSGI"
-session_name: "dancer.session"
+session_dir: 'sessions'
+session_name: "plack_session"
 
 template: "template_toolkit"
 engines:

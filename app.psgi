@@ -13,12 +13,12 @@ builder {
         qw(
             Dancer::App
             Environment
-            Dancer::Session
             Memory
+            Dancer::Session
+            Session
             Dancer::Version
             Dancer::Settings
             Parameters
-            Session
         ) ];
     dance;
 };
