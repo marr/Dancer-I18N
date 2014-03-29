@@ -9,10 +9,10 @@
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function(event) {
-        try {
-            console.log(jQuery && jQuery.fn.jquery);
-        } catch (e) {
-            console.error("jQuery not found");
+        if (jQuery) {
+            console.log (jQuery.fn.jquery);
+        } else {
+            throw new Error("jQuery is missing");
         }
     });
 </script>

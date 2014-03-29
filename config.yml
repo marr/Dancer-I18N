@@ -18,7 +18,9 @@ plugins:
     "I18N::TextDomain":
         domain: messages
 
+#session: "YAML"
 session: "PSGI"
+session_name: "dancer.session"
 
 template: "template_toolkit"
 engines:
